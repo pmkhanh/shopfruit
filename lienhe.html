@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trái Cây VN</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./image/logo.png">
+        <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+    <body style= "background-color:#01e37f;" >
+        <header>           
+            <input id="navbar-indicator" class="navbar-collapse" type="checkbox" checked>                       
+            <nav class="navbar">
+                <a class="navbar-brand" href="#"><img src="./image/logo.png" alt=""></a>
+                <a class="nav-link" href="index.html">Trang Chủ</a>
+                <a class="nav-link" href="dangnhap.html">Đăng Nhập</a>
+                <a class="nav-link" href="dangky.html">Đăng Ký</a>
+                <a class="nav-link" href="#">Giỏ Hàng</a>
+                <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                <div><form class="search-cart" name="frm-search"method="get" action="#"> 
+                    <div class="input-container">                                        
+                        <input class="search-input" type="text" 
+                        placeholder="Nhập nội dung cần tìm..." name="words">                     
+                        <i class="fa fa-search icon-white"></i>                                     
+                    </div>    
+                </form></div>                     
+            </nav>
+                                                              
+            <div class="title" style="background-color:darkkhaki; ">               
+                <h1 style="color:aliceblue;text-align:center">TRÁI CÂY TỐT CHO SỨC KHỎE</h1>             
+            </div>
+        </header>
+        <main>
+            <article class="form-lienhe">
+                <div class="divlh">
+                <form method="get" onsubmit="return checklh();">
+                    <div>
+                        <label for="email" class="m-2"><i class="fa fa-envelope" aria-hidden="true"></i> | Địa chỉ Email:</label>
+                        <input type="text" class="form-control" id="email"
+                            placeholder="Nhập Email của bạn" style="border: 1px solid black;">
+                    </div>
+                    <div>
+                        <label for="name" class="m-2"><i class="fas fa-user"></i> | Họ tên người gửi:</label>
+                        <input type="text" class="form-control" id="name"
+                            placeholder="Nhập họ tên của bạn" style="border: 1px solid black;">
+                    </div>
+                    <div>
+                        <label for="phone" class="m-2"><i class="fa fa-phone-square" aria-hidden="true"></i> | Số điện thoại:</label>
+                        <input type="text" class="form-control" id="phone"
+                            placeholder="Nhập Email hoặc họ tên của bạn" style="border: 1px solid black;">
+                    </div>
+                    <div>
+                        <textarea name="nd" id="nd" cols="50" rows="10" placeholder="Ý kiến của bạn"></textarea>
+                    </div>
+                    <button class="sent" type="submit">Gửi</button>
+                </form>
+            </div>
+            </article>
+        </main>
+        <footer>
+            <p>Liên hệ với chúng tôi thông qua. 
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a></p>
+            <p>Nhóm tác giả: Phạm Minh Khánh, Lê Minh Khải, Bùi Lê Hữu Thắng</p>
+        </footer>
+  </body>
+</html>
